@@ -5,8 +5,8 @@ while [ $DIG != 0 ]; do
    echo "Digite o salario:"
    read DIG
    SAL=$DIG
-   [ $SAL == $PRI ] && let SAL=0
-   [ $SAL == $SEG ] && let SAL=0
+   [ $SAL == $PRI ] &&  SAL=0
+   [ $SAL == $SEG ] &&  SAL=0
    if (( $SAL > $PRI )); then
    	TER=$SEG
 	SEG=$PRI
